@@ -1,0 +1,24 @@
+package com.practiceloop;
+
+import java.util.Scanner;
+
+public class PracticeLoopDemo10 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a number : ");
+		int n = sc.nextInt();
+		int temp = n;
+		int prod = 1;
+
+		
+
+		while (n > 0) {
+			int digit = n % 10;
+			prod = prod * digit;
+			n = n / 10;
+		}
+		System.out.println("Product of the digits of " + temp + " is : " + prod);
+	}
+
+}
